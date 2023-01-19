@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dchnld606hce3"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_d6nq1"]
+[ext_resource type="Script" path="res://addons/MarkdownRenderer/MarkdownRenderer.gd" id="2_v4mgr"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_d6nq1")
+
+[node name="Markdown" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_v4mgr")
+markdown_file = "res://test.md"
+background_color = Color(1, 1, 1, 1)
